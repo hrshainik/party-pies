@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+$bg-clr: #d3eefe;
+$clr1: #43515c;
+$clr2: #20303c;
+$clr3: #000;
+
+::selection {
+  color: $bg-clr;
+  background-color: $clr3;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba($clr3, 0.4);
+  background-color: $bg-clr;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: $bg-clr;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $clr1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
+  font-family: "Satisfy", cursive;
+  background-color: $bg-clr;
+}
+
+h1 {
+  font-size: 6.8rem;
+  width: 95%;
+  max-width: 100rem;
+  margin: 0 auto;
+  font-weight: 200;
+  color: $clr1;
+}
+
+p {
+  font-size: 3.2rem;
+  color: $clr2;
+}
+
+.one {
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+
+  & h1 {
+    padding-top: 3rem;
+  }
+
+  & .img-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -3;
+    width: 100%;
+
+    & > img {
+      width: 100%;
+    }
+
+    & .ingredients-imgs {
+      position: absolute;
+      right: 50%;
+
+      & img {
+        position: absolute;
+        right: 0;
+      }
+
+      & .ing-img-1 {
+        // onions
+        top: -6vw;
+        width: calc(10vw + 1rem);
+      }
+
+      & .ing-img-2 {
+        // tomatos
+        top: 8vw;
+        width: calc(8vw + 1rem);
+        right: 5vw;
+      }
+
+      & .ing-img-3 {
+        // spices
+        top: 5vw;
+        width: calc(3vw + 1rem);
+        right: 6vw;
+      }
+
+      & .ing-img-4 {
+        // wheat
+        top: -0.75vw;
+        width: calc(7vw + 1rem);
+      }
+
+      & .ing-img-5 {
+        // capcicum
+        top: 7vw;
+        width: calc(7vw + 1rem);
+      }
+
+      & .ing-img-6 {
+        // cheese
+        top: 11.5vw;
+        width: calc(10vw + 1rem);
+      }
+
+      & .ing-img-7 {
+        // red pepper
+        top: 2vw;
+        right: 11vw;
+        width: calc(4vw + 1rem);
+      }
+
+      & .ing-img-8 {
+        // leaf
+        top: -1vw;
+        right: 8.5vw;
+        width: calc(4vw + 1rem);
+      }
+
+      & .ing-img-9 {
+        // garlic
+        top: 4vw;
+        width: calc(4.75vw + 1rem);
+        right: 8.75vw;
+      }
+    }
+  }
+}
+
+.two {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+
+  & h1 {
+    margin-top: 5rem;
+  }
+
+  & .img-wrapper {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+
+    & .img-container {
+      overflow: hidden;
+      height: 100%;
+    }
+  }
+}
+
+.three {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+
+  & .img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    height: 90vh;
+
+    & img {
+      position: absolute;
+    }
+  }
+}
+
+.four {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 110vh;
+
+  & .img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    & img {
+      position: absolute;
+    }
+  }
+}
